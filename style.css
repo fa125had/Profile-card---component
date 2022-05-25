@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --color-darkCyan: hsl(185, 75%, 39%);
+    --color-veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+    --color-darkGrayishBlue: hsl(227, 10%, 46%);
+    --color-darkGray: hsl(0, 0%, 59%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.mainBackground {
+    width: 1440px;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-darkCyan);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: -74% 155%, 130% -109%;
+    background-size: 70%, 60%;
+    background-repeat: no-repeat;
+
+}
+.organizer {
+    max-height: 90%;
+}
+.boxContainer {
+    width: 375px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+#heroImg {
+    width: 100%;
+}
+.profileDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profileImg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profilePhoto {
+    border-radius: 100%;
+    border: 0.35rem solid #fff;
+    position: absolute;
+    margin: 2rem 0;
+
+}
+.profileNameAndAge {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    font-weight: 700;
+}
+.profileNameAndAge p {
+    color: var(--color-darkGray);
+    font-size: 1rem;
+}
+h2#location {
+    color: var(--color-darkGray);
+    font-weight: 300;
+}
+.dividerLine {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+}
+.useractivity {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.useractivity p {
+    color: var(--color-darkGrayishBlue);
+    font-size: 0.8rem;
+}
+.attribution {
+    background-color: var(--color-darkCyan);
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.attribution a {
+    color: #fff;
+}
+@media all and (max-width: 376px) {
+    .mainBackground {
+        height: 100%;
+        background-position: -12rem -34rem, 43rem 14rem;
+        background-size: 70%, 60%;
+    }
+    .organizer {
+        height: 50%;
+        max-width: 375px;
+    }
+}
+@media all and (max-width: 319px) {
+    body {
+        display: none;
+    }
+
+}
